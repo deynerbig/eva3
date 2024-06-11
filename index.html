@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>trabajo feliz</title>
+    <script type="module" src="assets/js/firebase.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
-<body>
-    
+<body id="iluminado">
+    <button id="btncolor">cambiar color</button>
+    <button id="btncolor">cambiar tamaño</button>
+    <h1>registro de trabajador</h1>
+    <form class="formulario">
+        <div>
+            <label >nombre<span>*</span></label>
+            <input type="text" id="nombre" placeholder="ej:anthony">
+            <label >apellido<span>*</span></label>
+            <input type="text" id="apellido" placeholder="ej:oviedo">
+            <label >rut<span>*</span></label>
+            <input type="text" rut="rut" placeholder="ej:11.111.111-k">
+            <label >telefono<span>*</span></label>
+            <input type="number" id="telefono" placeholder="ej:91111111">
+            <label>email<span>*</span></label>
+            <input type="email" id="email" placeholder="loremipsum@gmail.com">
+
+            <label >sexo<span>*</span></label>
+            <input type="radio" name="sexo" id="sexo1" value="hombre">
+            <label for="micheck">HOMBRE</label>
+            <input type="radio" name="sexo" id="sexo2" value="mujer">
+            <label for="micheck">MUJER</label>
+
+            <label >comentario</label>
+            <textarea name="comentario" id="comenta" cols="30" rows="10" placeholder="deja aqui tu comentario"></textarea>
+            <select name="puesto" id="puesto">trabajador</select>
+            <button id="btnregistro">REGISTRAR</button>
+        </div>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>nombre</th>
+                <th>apellido</th>
+                <th>rut</th>
+                <th>telefono</th>
+                <th>sexo</th>
+                <th>email</th>
+            </tr>
+        </thead>
+    </table>
+
 </body>
 </html>

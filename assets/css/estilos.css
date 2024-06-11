@@ -1,0 +1,23 @@
+
+.iluminado{
+    background-color:white;
+}
+.oscuro{
+    background-color: black;
+}
+.formulario{
+    background-color: aliceblue;
+    border-style: dashed dotted;
+    width: 70%;
+    margin-left: 15%;
+}
+input{
+    display: block;
+}
+textarea{
+    display: block;
+}
+h1{
+    text-align: center;
+}
+
