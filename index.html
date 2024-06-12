@@ -8,46 +8,58 @@
     <script type="module" src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
-<body id="iluminado">
+<body id="iluminado letra">
     <button id="btncolor">cambiar color</button>
-    <button id="btncolor">cambiar tamaño</button>
-    <h1>registro de trabajador</h1>
-    <form class="formulario">
-        <div>
-            <label >nombre<span>*</span></label>
+    <button id="btntamaño">cambiar tamaño</button>
+    <h1 id="titulo">registro de trabajador</h1>
+        <div id="datosinput">
+            <label for="nombre" class="label">nombre<span>*</span></label>
             <input type="text" id="nombre" placeholder="ej:anthony">
-            <label >apellido<span>*</span></label>
+            <label for="apellido" class="label">apellido<span>*</span></label>
             <input type="text" id="apellido" placeholder="ej:oviedo">
-            <label >rut<span>*</span></label>
-            <input type="text" rut="rut" placeholder="ej:11.111.111-k">
-            <label >telefono<span>*</span></label>
+            <label for="rut" class="label">rut<span>*</span></label>
+            <input type="text" id="rut"  placeholder="ej:11.111.111-k">
+            <label for="telefono"class="label">telefono<span>*</span></label>
             <input type="number" id="telefono" placeholder="ej:91111111">
-            <label>email<span>*</span></label>
-            <input type="email" id="email" placeholder="loremipsum@gmail.com">
+            <label for="email" class="label" >email<span>*</span></label>
+            <input type="email" id="email" placeholder="ej:loremipsum@gmail.com">
+            <div id="radio">
+                <label class="label">SEXO<span>*</span></label>
+                <label for="micheck" id="h">masculino</label>
+                <input type="radio" name="sexo" id="sexo1" value="hombre">
+                <label for="micheck" id="m">femenino</label>
+                <input type="radio" name="sexo" id="sexo2" value="mujer">
+            </div>
+            <label for="select" id="puestotr">seleccionar el puesto de trabajo</label>
+            <select name="puesto" id="puesto">
+                <option value="gerente">gerente</option>
+                <option value="jefe">jefe</option>
+                <option value="trabajador">trabajador normal</option>
+            </select>
 
-            <label >sexo<span>*</span></label>
-            <input type="radio" name="sexo" id="sexo1" value="hombre">
-            <label for="micheck">HOMBRE</label>
-            <input type="radio" name="sexo" id="sexo2" value="mujer">
-            <label for="micheck">MUJER</label>
-
-            <label >comentario</label>
             <textarea name="comentario" id="comenta" cols="30" rows="10" placeholder="deja aqui tu comentario"></textarea>
-            <select name="puesto" id="puesto">trabajador</select>
-            <button id="btnregistro">REGISTRAR</button>
+
+            <button id="btnregistro" class="botonp">REGISTRAR</button>
+            <button id="btnactualizar" class="botonp">ACTUALIZAR </button>
+            <button id="btneliminar" class="botonp">ELIMINAR</button>
         </div>
-    </form>
-    <table>
+        <hr>
+    <table id="tabla">
         <thead>
-            <tr>
-                <th>nombre</th>
-                <th>apellido</th>
-                <th>rut</th>
-                <th>telefono</th>
-                <th>sexo</th>
-                <th>email</th>
+            <tr id="tablatr">
+                <th class="th"><mark>nombre</mark></th>
+                <th class="th"><mark>apellido</mark></th>
+                <th class="th"><mark>rut</mark></th>
+                <th class="th"><mark>telefono</mark></th>
+                <th class="th"><mark>email</mark></th>
+                <th class="th"><mark>sexo</mark></th>
+                <th class="th"><mark>puesto de trabajo</mark></th>
+                <th class="th"><mark>comentario</mark></th>
             </tr>
         </thead>
+        <tbody id="cuerpoDB">
+
+        </tbody>
     </table>
 
 </body>
