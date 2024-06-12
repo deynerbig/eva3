@@ -1,20 +1,9 @@
-body{
-    transition: background-color 2s;
-}
+
 .iluminado{
     background-color:white;
-    color: black;
 }
 .oscuro{
     background-color: black;
-    color: white;
-}
-
-.letra{
-    font-size: 30px;
-}
-.letrano{
-    font-size: 20px;
 }
 .formulario{
     background-color: aliceblue;
@@ -24,114 +13,11 @@ body{
 }
 input{
     display: block;
-    margin:auto ;
 }
-#h{
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-}
-#sexo1{
-    display: block;
-}
-#m{
-    display: flex;
-    justify-content: center;
-}
-#sexo2{
+textarea{
     display: block;
 }
 h1{
     text-align: center;
 }
-#radio{
-    margin-left: 30%;
-    margin-right: 30%;
-}
-select{
-    margin-top: 1%;
-    margin-left: 44%;
-}
-#puestotr{
-    display: flex;
-    justify-content: center;
-    margin-top: 1%;
-}
-textarea{
-    margin-top: 5%;
-    display: block;
-}
-#comenta{
-    background-color: beige;
-    margin-left: 38.5%;
-}
-.botonp{
-    margin-top: 3%;
-    margin-left: 18%;
-    background-color: #244f26;
-    color: white;
-    border-style: dotted double;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.botonp:hover{
-    background-color: rgb(222, 59, 34);
-}
-#btnregistrar{
-    margin-left: 10%;
-}
-#btncolor{
-    background-color: black;
-    color: white;
-    border-style: double;
-    cursor: pointer;
-    transition: background-color 1s ease;
-}
-#btncolor:hover{
-    background-color: white;
-    color: black;
-}
-#btntamaño{
-    display: block;
-    background-color: yellow;
-    color: rgb(6, 5, 5);
-    border-style: groove;
-    cursor: pointer;
-    transition: backgroud-color 1s ease;
-    margin-top: 3%;
-}
-#btntamaño:hover{
-    background-color: rgb(222, 59, 34);
-    color: white;
-}
-.label{
-    display: flex;
-    justify-content:center ;
-}
-#tablatr{
-    margin-left: 10%;
-}
-#tabla{
-    margin-left: 13%;
-    border-style: dotted;
-    border-color: #4ea452;  
-}
-#datosinput{
-    border-style: double;
-    width: 70%;
-    margin: auto;
-    background-color: #4ea452;
-    
-}
-#titulo{
-    border-style: solid;
-    background-color: beige;
-    height: 10%;
-    color: #4ea452 ;
-    width: 50%;
-    margin: auto;
-}
 
-#cuerpoDB{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
